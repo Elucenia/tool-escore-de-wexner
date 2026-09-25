@@ -1,0 +1,258 @@
+{
+  "tool": {
+    "id": "escore-de-wexner",
+    "title": "Escore de Wexner (incontinência fecal)",
+    "short": "Gravidade da incontinência anal (Cleveland Clinic)",
+    "desc": "Calcule o escore de Wexner (Cleveland Clinic) de incontinência fecal: frequência de perda de fezes sólidas, líquidas e gases, uso de protetor e impacto na vida.",
+    "lead": "Mede a gravidade da incontinência anal de 0 (continência perfeita) a 20 (incontinência completa), pela frequência de 5 itens. É o escore mais usado para acompanhar o tratamento.",
+    "spec": [
+      "coloproctologia",
+      "cirurgia-geral",
+      "ginecologia-e-obstetricia",
+      "geriatria"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "solido",
+        "Perda de fezes sólidas",
+        "sel",
+        {
+          "opts": {
+            "0": "Nunca",
+            "1": "Raramente (menos de 1 vez por mês)",
+            "2": "Às vezes (menos de 1 vez por semana, 1 ou mais por mês)",
+            "3": "Geralmente (menos de 1 vez por dia, 1 ou mais por semana)",
+            "4": "Sempre (1 ou mais vezes por dia)"
+          }
+        }
+      ],
+      [
+        "liquido",
+        "Perda de fezes líquidas",
+        "sel",
+        {
+          "opts": {
+            "0": "Nunca",
+            "1": "Raramente (menos de 1 vez por mês)",
+            "2": "Às vezes (menos de 1 vez por semana, 1 ou mais por mês)",
+            "3": "Geralmente (menos de 1 vez por dia, 1 ou mais por semana)",
+            "4": "Sempre (1 ou mais vezes por dia)"
+          }
+        }
+      ],
+      [
+        "gas",
+        "Perda de gases",
+        "sel",
+        {
+          "opts": {
+            "0": "Nunca",
+            "1": "Raramente (menos de 1 vez por mês)",
+            "2": "Às vezes (menos de 1 vez por semana, 1 ou mais por mês)",
+            "3": "Geralmente (menos de 1 vez por dia, 1 ou mais por semana)",
+            "4": "Sempre (1 ou mais vezes por dia)"
+          }
+        }
+      ],
+      [
+        "protetor",
+        "Uso de absorvente ou protetor",
+        "sel",
+        {
+          "opts": {
+            "0": "Nunca",
+            "1": "Raramente (menos de 1 vez por mês)",
+            "2": "Às vezes (menos de 1 vez por semana, 1 ou mais por mês)",
+            "3": "Geralmente (menos de 1 vez por dia, 1 ou mais por semana)",
+            "4": "Sempre (1 ou mais vezes por dia)"
+          }
+        }
+      ],
+      [
+        "estilo",
+        "Alteração do estilo de vida",
+        "sel",
+        {
+          "opts": {
+            "0": "Nunca",
+            "1": "Raramente (menos de 1 vez por mês)",
+            "2": "Às vezes (menos de 1 vez por semana, 1 ou mais por mês)",
+            "3": "Geralmente (menos de 1 vez por dia, 1 ou mais por semana)",
+            "4": "Sempre (1 ou mais vezes por dia)"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "Escore de Wexner",
+      "unit": "de 20",
+      "bands": [
+        [
+          0,
+          "low",
+          "Continência perfeita (0)",
+          ""
+        ],
+        [
+          1,
+          "mid",
+          "Incontinência presente: quanto maior o escore, maior a gravidade (máximo 20)",
+          "Use o mesmo escore para comparar antes e depois do tratamento."
+        ]
+      ]
+    },
+    "formula": "<p>Cada um dos 5 itens recebe de 0 a 4 pela frequência: nunca (0); raramente, menos de 1 vez por mês (1); às vezes, menos de 1 vez por semana e 1 ou mais por mês (2); geralmente, menos de 1 vez por dia e 1 ou mais por semana (3); sempre, 1 ou mais vezes por dia (4).</p><p>Total de 0 (continência perfeita) a 20 (incontinência completa).</p>",
+    "table": [
+      [
+        "Pontos",
+        "Interpretação"
+      ],
+      [
+        "0",
+        "Continência perfeita"
+      ],
+      [
+        "1 a 19",
+        "Incontinência de gravidade crescente"
+      ],
+      [
+        "20",
+        "Incontinência completa"
+      ]
+    ],
+    "tips": [
+      "Pergunte ativamente: a incontinência é subnotificada por vergonha, principalmente após parto vaginal e em idosos.",
+      "Perda de gases isolada já pontua e pode ser o primeiro sinal de lesão esfincteriana obstétrica.",
+      "Investigue diarreia, impactação fecal com transbordamento e doença neurológica antes de atribuir a perda a lesão esfincteriana.",
+      "Ultrassom endoanal e manometria anorretal definem a causa; o escore mede a gravidade e a resposta ao tratamento.",
+      "Biofeedback, ajuste da consistência das fezes e fisioterapia pélvica melhoram o escore em boa parte dos casos antes de qualquer cirurgia."
+    ],
+    "sources": [
+      [
+        "Jorge JM, Wexner SD. Etiology and management of fecal incontinence. Dis Colon Rectum, 1993.",
+        "https://doi.org/10.1007/BF02050307"
+      ]
+    ],
+    "cases": [
+      [
+        "Nenhuma perda: 0 (continência perfeita)",
+        {
+          "solido": "0",
+          "liquido": "0",
+          "gas": "0",
+          "protetor": "0",
+          "estilo": "0"
+        },
+        {
+          "score": 0,
+          "level": "low"
+        }
+      ],
+      [
+        "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+        {
+          "solido": "0",
+          "liquido": "2",
+          "gas": "3",
+          "protetor": "4",
+          "estilo": "2"
+        },
+        {
+          "score": 11,
+          "level": "mid"
+        }
+      ],
+      [
+        "Todos os itens \"sempre\": 20 (incontinência completa)",
+        {
+          "solido": "4",
+          "liquido": "4",
+          "gas": "4",
+          "protetor": "4",
+          "estilo": "4"
+        },
+        {
+          "score": 20,
+          "level": "mid"
+        }
+      ]
+    ],
+    "batch": "renal-digestivo",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 20",
+      "label": "Escore de Wexner",
+      "fields": [
+        [
+          "solido",
+          "sel",
+          0
+        ],
+        [
+          "liquido",
+          "sel",
+          0
+        ],
+        [
+          "gas",
+          "sel",
+          0
+        ],
+        [
+          "protetor",
+          "sel",
+          0
+        ],
+        [
+          "estilo",
+          "sel",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Continência perfeita (0)",
+          ""
+        ],
+        [
+          1,
+          "mid",
+          "Incontinência presente: quanto maior o escore, maior a gravidade (máximo 20)",
+          "Use o mesmo escore para comparar antes e depois do tratamento."
+        ]
+      ]
+    },
+    "areaId": "renal-digestivo",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/renal-digestivo.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/renal-digestivo.php",
+    "sha256": "95087d729438637d36e1a49af04d8de0fe1d9f7876443084443906a9281ef107",
+    "bytes": 109421
+  },
+  "clinicalValidation": "not-performed"
+}
