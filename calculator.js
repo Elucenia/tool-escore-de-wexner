@@ -1,11 +1,11 @@
-/* tool-escore-de-wexner · Elucenia · https://github.com/Elucenia/tool-escore-de-wexner
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-escore-de-wexner · ELUCENIA · https://github.com/Elucenia/tool-escore-de-wexner
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escore-de-wexner","title":"Escore de Wexner (incontinência fecal)","fields":[["solido","Perda de fezes sólidas","sel",{"opts":{"0":"Nunca","1":"Raramente (menos de 1 vez por mês)","2":"Às vezes (menos de 1 vez por semana, 1 ou mais por mês)","3":"Geralmente (menos de 1 vez por dia, 1 ou mais por semana)","4":"Sempre (1 ou mais vezes por dia)"}}],["liquido","Perda de fezes líquidas","sel",{"opts":{"0":"Nunca","1":"Raramente (menos de 1 vez por mês)","2":"Às vezes (menos de 1 vez por semana, 1 ou mais por mês)","3":"Geralmente (menos de 1 vez por dia, 1 ou mais por semana)","4":"Sempre (1 ou mais vezes por dia)"}}],["gas","Perda de gases","sel",{"opts":{"0":"Nunca","1":"Raramente (menos de 1 vez por mês)","2":"Às vezes (menos de 1 vez por semana, 1 ou mais por mês)","3":"Geralmente (menos de 1 vez por dia, 1 ou mais por semana)","4":"Sempre (1 ou mais vezes por dia)"}}],["protetor","Uso de absorvente ou protetor","sel",{"opts":{"0":"Nunca","1":"Raramente (menos de 1 vez por mês)","2":"Às vezes (menos de 1 vez por semana, 1 ou mais por mês)","3":"Geralmente (menos de 1 vez por dia, 1 ou mais por semana)","4":"Sempre (1 ou mais vezes por dia)"}}],["estilo","Alteração do estilo de vida","sel",{"opts":{"0":"Nunca","1":"Raramente (menos de 1 vez por mês)","2":"Às vezes (menos de 1 vez por semana, 1 ou mais por mês)","3":"Geralmente (menos de 1 vez por dia, 1 ou mais por semana)","4":"Sempre (1 ou mais vezes por dia)"}}]],"config":{"unit":"de 20","label":"Escore de Wexner","fields":[["solido","sel",0],["liquido","sel",0],["gas","sel",0],["protetor","sel",0],["estilo","sel",0]],"bands":[[0,"low","Continência perfeita (0)",""],[1,"mid","Incontinência presente: quanto maior o escore, maior a gravidade (máximo 20)","Use o mesmo escore para comparar antes e depois do tratamento."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
