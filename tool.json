@@ -5,13 +5,13 @@
     "short": "Gravidade da incontinência anal (Cleveland Clinic)",
     "desc": "Calcule o escore de Wexner (Cleveland Clinic) de incontinência fecal: frequência de perda de fezes sólidas, líquidas e gases, uso de protetor e impacto na vida.",
     "lead": "Mede a gravidade da incontinência anal de 0 (continência perfeita) a 20 (incontinência completa), pela frequência de 5 itens. É o escore mais usado para acompanhar o tratamento.",
+    "kind": "Escore",
     "spec": [
       "coloproctologia",
       "cirurgia-geral",
       "ginecologia-e-obstetricia",
       "geriatria"
     ],
-    "tier": 1,
     "fields": [
       [
         "solido",
@@ -84,50 +84,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "Escore de Wexner",
-      "unit": "de 20",
-      "bands": [
-        [
-          0,
-          "low",
-          "Continência perfeita (0)",
-          ""
-        ],
-        [
-          1,
-          "mid",
-          "Incontinência presente: quanto maior o escore, maior a gravidade (máximo 20)",
-          "Use o mesmo escore para comparar antes e depois do tratamento."
-        ]
-      ]
-    },
     "formula": "<p>Cada um dos 5 itens recebe de 0 a 4 pela frequência: nunca (0); raramente, menos de 1 vez por mês (1); às vezes, menos de 1 vez por semana e 1 ou mais por mês (2); geralmente, menos de 1 vez por dia e 1 ou mais por semana (3); sempre, 1 ou mais vezes por dia (4).</p><p>Total de 0 (continência perfeita) a 20 (incontinência completa).</p>",
-    "table": [
-      [
-        "Pontos",
-        "Interpretação"
-      ],
-      [
-        "0",
-        "Continência perfeita"
-      ],
-      [
-        "1 a 19",
-        "Incontinência de gravidade crescente"
-      ],
-      [
-        "20",
-        "Incontinência completa"
-      ]
-    ],
-    "tips": [
-      "Pergunte ativamente: a incontinência é subnotificada por vergonha, principalmente após parto vaginal e em idosos.",
-      "Perda de gases isolada já pontua e pode ser o primeiro sinal de lesão esfincteriana obstétrica.",
-      "Investigue diarreia, impactação fecal com transbordamento e doença neurológica antes de atribuir a perda a lesão esfincteriana.",
-      "Ultrassom endoanal e manometria anorretal definem a causa; o escore mede a gravidade e a resposta ao tratamento.",
-      "Biofeedback, ajuste da consistência das fezes e fisioterapia pélvica melhoram o escore em boa parte dos casos antes de qualquer cirurgia."
-    ],
     "sources": [
       [
         "Jorge JM, Wexner SD. Etiology and management of fecal incontinence. Dis Colon Rectum, 1993.",
@@ -178,53 +135,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 20",
-      "label": "Escore de Wexner",
-      "fields": [
-        [
-          "solido",
-          "sel",
-          0
-        ],
-        [
-          "liquido",
-          "sel",
-          0
-        ],
-        [
-          "gas",
-          "sel",
-          0
-        ],
-        [
-          "protetor",
-          "sel",
-          0
-        ],
-        [
-          "estilo",
-          "sel",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Continência perfeita (0)",
-          ""
-        ],
-        [
-          1,
-          "mid",
-          "Incontinência presente: quanto maior o escore, maior a gravidade (máximo 20)",
-          "Use o mesmo escore para comparar antes e depois do tratamento."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -233,17 +143,394 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:02:44.190Z",
+      "total": 3125,
+      "passed": 3125,
+      "sourceRowCount": 3125,
+      "uniqueApiInputCount": 3125,
+      "sourceContextCount": 3125,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "848031ed0234b0b462894a9bebc11873cd4cb15df82b2ec73dfbc3ae5d897b5c",
+        "total": 3125,
+        "bankRowCount": 3125,
+        "uniqueApiInputCount": 3125,
+        "sourceContextCount": 3125,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-screening-independent-expectations-final28.json",
+            "sha256": "2cbc1f414248ca8b232eca6ddb7843779fa1b3723758d27a7f29a3dd4c947b97"
+          },
+          {
+            "file": "reports/review-20261003/six-screening-primary-source-review-final28-v2.json",
+            "sha256": "2aa00562adf4ec500ce3367132a9ef92a84d610bfd6a7d68671b2bd1dad4f9e3"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+          "sha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89"
+        },
+        "packagingRequirement": "Complete downloadable expected/obtained bank; copy the file byte-exactly into each package. New formula prose/field/source revisions compose under separate ownership."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 3125,
+        "uniqueApiInputs": 3125,
+        "duplicateRows": 0,
+        "expectedTupleSha256": "3d875d54f9daa7dd65b647b83c3b8830b9c2b4e632c18ba7afa10c69227601a5"
+      },
+      "scope": "Previously selected source integer point total only: Exhaustive5^5=3125 selected-code combinations; numericpointsum only.",
+      "sources": [
+        {
+          "id": "escore-de-wexner",
+          "edition": "Jorge/Wexner1993 ClevelandClinic Continence Grading Scale Table3, five selected codes0..4",
+          "primaryReads": [
+            {
+              "url": "https://www.scribd.com/document/988229388/Jorge-1993",
+              "access": "Original1993 article reprint indexed text personally read printedp84 Table3/footnote and evaluationparagraph printedp82; not reader AI synopsis",
+              "readScope": "Solid/liquid/gas/pad/lifestyle fiveequalweights0..4, sum0..20; originalfrequencyinequality glyphs OCR are not independently visually adjudicated"
+            }
+          ],
+          "constants": {
+            "keys": [
+              "solido",
+              "liquido",
+              "gas",
+              "protetor",
+              "estilo"
+            ],
+            "allowedCodes": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "maximum": 20
+          },
+          "limitations": [
+            "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+            "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+            "OriginalpublisherDOI fulltext not obtained; primaryreprintTable3 point rows are unambiguous, but OCR _> glyph at exactfrequency boundaries must not be treated as visualoriginal proof. Clinicalcategory/rubrictranslation/instrumentrights remain not approved."
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+      "evidenceSha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89",
+      "independentPeer": {
+        "status": "passed-scoped-numeric",
+        "evidence": {
+          "file": "reports/review-20261003/six-screening-independent-peer-verify-final28.json",
+          "sha256": "f44cf7582617795c9cbb3daf2883b2846546a4249579e9c63b9d0c9d5e3b339c"
+        },
+        "scope": "Independent own frozen expectations plus reauthored original45368 vectors; three-source Node and actual isolatedChromium totals only."
+      },
+      "freshAdapterExecutions": 9375,
+      "freshVmExecutions": 9375,
+      "actualBrowserEvidenceScope": "Original source28 actual isolated Chromium 3125×3 unchanged adapter captures retained in the bank; not a served page/UI proof.",
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/escore-de-wexner/calculator.js",
+          "app": "website",
+          "sha256": "f3749af8120c6dd7387570880070e0623ae1db3bca16abbd3117985803f2149c"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escore-de-wexner/calculator.js",
+          "app": "dashboard",
+          "sha256": "f3749af8120c6dd7387570880070e0623ae1db3bca16abbd3117985803f2149c"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escore-de-wexner/calculator.js",
+          "app": "command-center",
+          "sha256": "f3749af8120c6dd7387570880070e0623ae1db3bca16abbd3117985803f2149c"
+        }
+      ],
+      "qualifications": [
+        "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+        "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+        "OriginalpublisherDOI fulltext not obtained; primaryreprintTable3 point rows are unambiguous, but OCR _> glyph at exactfrequency boundaries must not be treated as visualoriginal proof. Clinicalcategory/rubrictranslation/instrumentrights remain not approved.",
+        "Only caller-selected raw.score integer total is projected into this bank. Original main display, source response-position witnesses and item10 numeric component remain in the untouched donor report; no clinical level, note/verdict, self-harm alarm, diagnosis, treatment or instrument-rubric equivalence is approved.",
+        "All cases and all projected expected/obtained totals are present. Numerical observation arrays are indexed by the exact original case index; mirror/runtime executions do not multiply case or unique-input counts.",
+        "Source access is limited to the precisely recorded original/direct/indexed sections. Existence of an edition or source hyperlink does not mean the entire original paper or questionnaire was read.",
+        "EPDS ordering prose is independently owned by the nine-target clarification candidate; future catalog/resolver merges must preserve those fields rather than replace whole snapshots.",
+        "Fresh compiled/source/package/browser bindings are still required. Clinical validation, official/professional language review, source rights and full-method conformance remain not-performed."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Cleveland Clinic/Wexner Jorge 1993:5 itens 0–4, total 0–20; incontinência fecal",
+    "implementationVersion": "escore-de-wexner@native-2026-10-03+f3749af8120c",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/8416784/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Cada um dos 5 itens recebe de 0 a 4 pela frequência: nunca (0); raramente, menos de 1 vez por mês (1); às vezes, menos de 1 vez por semana e 1 ou mais por mês (2); geralmente, menos de 1 vez por dia e 1 ou mais por semana (3); sempre, 1 ou mais vezes por dia (4). Total de 0 (continência perfeita) a 20 (incontinência completa).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "solido",
+            "label": "Perda de fezes sólidas",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nunca",
+              "1": "Raramente (menos de 1 vez por mês)",
+              "2": "Às vezes (menos de 1 vez por semana, 1 ou mais por mês)",
+              "3": "Geralmente (menos de 1 vez por dia, 1 ou mais por semana)",
+              "4": "Sempre (1 ou mais vezes por dia)"
+            }
+          },
+          {
+            "key": "liquido",
+            "label": "Perda de fezes líquidas",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nunca",
+              "1": "Raramente (menos de 1 vez por mês)",
+              "2": "Às vezes (menos de 1 vez por semana, 1 ou mais por mês)",
+              "3": "Geralmente (menos de 1 vez por dia, 1 ou mais por semana)",
+              "4": "Sempre (1 ou mais vezes por dia)"
+            }
+          },
+          {
+            "key": "gas",
+            "label": "Perda de gases",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nunca",
+              "1": "Raramente (menos de 1 vez por mês)",
+              "2": "Às vezes (menos de 1 vez por semana, 1 ou mais por mês)",
+              "3": "Geralmente (menos de 1 vez por dia, 1 ou mais por semana)",
+              "4": "Sempre (1 ou mais vezes por dia)"
+            }
+          },
+          {
+            "key": "protetor",
+            "label": "Uso de absorvente ou protetor",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nunca",
+              "1": "Raramente (menos de 1 vez por mês)",
+              "2": "Às vezes (menos de 1 vez por semana, 1 ou mais por mês)",
+              "3": "Geralmente (menos de 1 vez por dia, 1 ou mais por semana)",
+              "4": "Sempre (1 ou mais vezes por dia)"
+            }
+          },
+          {
+            "key": "estilo",
+            "label": "Alteração do estilo de vida",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nunca",
+              "1": "Raramente (menos de 1 vez por mês)",
+              "2": "Às vezes (menos de 1 vez por semana, 1 ou mais por mês)",
+              "3": "Geralmente (menos de 1 vez por dia, 1 ou mais por semana)",
+              "4": "Sempre (1 ou mais vezes por dia)"
+            }
+          }
+        ],
+        "hash": "a34364a1f5546214acf6fe0834ea2bef7179d901ed07c808eed6f609f9802f89"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Jorge JM, Wexner SD. Etiology and management of fecal incontinence. Dis Colon Rectum, 1993.",
+          "url": "https://doi.org/10.1007/BF02050307",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Etiology and management of fecal incontinence.",
+            "year": "1993",
+            "firstPublicationDate": "1993-01-01",
+            "doi": "10.1007/bf02050307",
+            "pmid": "8416784",
+            "journal": "Diseases of the colon and rectum",
+            "authors": "Jorge JM, Wexner SD."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/8416784/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "d0a13ee7c05d0b8bb84ebfac4f15e2aa7fa8c65822058ce2299d07e0d8b3447c",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:02:44.190Z",
+        "total": 3125,
+        "passed": 3125,
+        "sourceRowCount": 3125,
+        "uniqueApiInputCount": 3125,
+        "sourceContextCount": 3125,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "848031ed0234b0b462894a9bebc11873cd4cb15df82b2ec73dfbc3ae5d897b5c",
+          "total": 3125,
+          "bankRowCount": 3125,
+          "uniqueApiInputCount": 3125,
+          "sourceContextCount": 3125,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-screening-independent-expectations-final28.json",
+              "sha256": "2cbc1f414248ca8b232eca6ddb7843779fa1b3723758d27a7f29a3dd4c947b97"
+            },
+            {
+              "file": "reports/review-20261003/six-screening-primary-source-review-final28-v2.json",
+              "sha256": "2aa00562adf4ec500ce3367132a9ef92a84d610bfd6a7d68671b2bd1dad4f9e3"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+            "sha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89"
+          },
+          "packagingRequirement": "Complete downloadable expected/obtained bank; copy the file byte-exactly into each package. New formula prose/field/source revisions compose under separate ownership."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 3125,
+          "uniqueApiInputs": 3125,
+          "duplicateRows": 0,
+          "expectedTupleSha256": "3d875d54f9daa7dd65b647b83c3b8830b9c2b4e632c18ba7afa10c69227601a5"
+        },
+        "scope": "Previously selected source integer point total only: Exhaustive5^5=3125 selected-code combinations; numericpointsum only.",
+        "sources": [
+          {
+            "id": "escore-de-wexner",
+            "edition": "Jorge/Wexner1993 ClevelandClinic Continence Grading Scale Table3, five selected codes0..4",
+            "primaryReads": [
+              {
+                "url": "https://www.scribd.com/document/988229388/Jorge-1993",
+                "access": "Original1993 article reprint indexed text personally read printedp84 Table3/footnote and evaluationparagraph printedp82; not reader AI synopsis",
+                "readScope": "Solid/liquid/gas/pad/lifestyle fiveequalweights0..4, sum0..20; originalfrequencyinequality glyphs OCR are not independently visually adjudicated"
+              }
+            ],
+            "constants": {
+              "keys": [
+                "solido",
+                "liquido",
+                "gas",
+                "protetor",
+                "estilo"
+              ],
+              "allowedCodes": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "maximum": 20
+            },
+            "limitations": [
+              "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+              "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+              "OriginalpublisherDOI fulltext not obtained; primaryreprintTable3 point rows are unambiguous, but OCR _> glyph at exactfrequency boundaries must not be treated as visualoriginal proof. Clinicalcategory/rubrictranslation/instrumentrights remain not approved."
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+        "evidenceSha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89",
+        "independentPeer": {
+          "status": "passed-scoped-numeric",
+          "evidence": {
+            "file": "reports/review-20261003/six-screening-independent-peer-verify-final28.json",
+            "sha256": "f44cf7582617795c9cbb3daf2883b2846546a4249579e9c63b9d0c9d5e3b339c"
+          },
+          "scope": "Independent own frozen expectations plus reauthored original45368 vectors; three-source Node and actual isolatedChromium totals only."
+        },
+        "freshAdapterExecutions": 9375,
+        "freshVmExecutions": 9375,
+        "actualBrowserEvidenceScope": "Original source28 actual isolated Chromium 3125×3 unchanged adapter captures retained in the bank; not a served page/UI proof.",
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/escore-de-wexner/calculator.js",
+            "app": "website",
+            "sha256": "f3749af8120c6dd7387570880070e0623ae1db3bca16abbd3117985803f2149c"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escore-de-wexner/calculator.js",
+            "app": "dashboard",
+            "sha256": "f3749af8120c6dd7387570880070e0623ae1db3bca16abbd3117985803f2149c"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escore-de-wexner/calculator.js",
+            "app": "command-center",
+            "sha256": "f3749af8120c6dd7387570880070e0623ae1db3bca16abbd3117985803f2149c"
+          }
+        ],
+        "qualifications": [
+          "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+          "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+          "OriginalpublisherDOI fulltext not obtained; primaryreprintTable3 point rows are unambiguous, but OCR _> glyph at exactfrequency boundaries must not be treated as visualoriginal proof. Clinicalcategory/rubrictranslation/instrumentrights remain not approved.",
+          "Only caller-selected raw.score integer total is projected into this bank. Original main display, source response-position witnesses and item10 numeric component remain in the untouched donor report; no clinical level, note/verdict, self-harm alarm, diagnosis, treatment or instrument-rubric equivalence is approved.",
+          "All cases and all projected expected/obtained totals are present. Numerical observation arrays are indexed by the exact original case index; mirror/runtime executions do not multiply case or unique-input counts.",
+          "Source access is limited to the precisely recorded original/direct/indexed sections. Existence of an edition or source hyperlink does not mean the entire original paper or questionnaire was read.",
+          "EPDS ordering prose is independently owned by the nine-target clarification candidate; future catalog/resolver merges must preserve those fields rather than replace whole snapshots.",
+          "Fresh compiled/source/package/browser bindings are still required. Clinical validation, official/professional language review, source rights and full-method conformance remain not-performed."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "f3749af8120c6dd7387570880070e0623ae1db3bca16abbd3117985803f2149c"
+    },
+    "limits": "A gravidade relatada de incontinência fecal não define sua causa ou tratamento. A revisão original destaca história, exame e avaliação fisiológica pré-tratamento. A escala e suas frequências devem ser aplicadas conforme a versão; o total não substitui avaliação da função anorretal.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.929Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não contém escala de cinco itens ou frequências 0–4. Alegação de instrumento mais usado não é confirmada nesse resumo."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escore-de-wexner/calculator.js",
+    "bytes": 5799,
+    "sha256": "f3749af8120c6dd7387570880070e0623ae1db3bca16abbd3117985803f2149c"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "bbf0803212ae2c21616d373d7b1c8bf639a3148c500285671ca67cfe0a486ec9",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "bb7351512b8336a4e241efc2ded3cc8967fcbf66eea95c1422631ed375ef9edd",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "bb7351512b8336a4e241efc2ded3cc8967fcbf66eea95c1422631ed375ef9edd",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

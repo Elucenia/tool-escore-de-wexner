@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field solido",
+    "input": {
+      "liquido": "0",
+      "gas": "0",
+      "protetor": "0",
+      "estilo": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "solido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field solido",
+    "input": {
+      "solido": "",
+      "liquido": "0",
+      "gas": "0",
+      "protetor": "0",
+      "estilo": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "solido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option solido",
+    "input": {
+      "solido": "__ELUCENIA_INVALID_OPTION__",
+      "liquido": "0",
+      "gas": "0",
+      "protetor": "0",
+      "estilo": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "solido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field liquido",
+    "input": {
+      "solido": "0",
+      "gas": "0",
+      "protetor": "0",
+      "estilo": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "liquido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field liquido",
+    "input": {
+      "solido": "0",
+      "liquido": "",
+      "gas": "0",
+      "protetor": "0",
+      "estilo": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "liquido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option liquido",
+    "input": {
+      "solido": "0",
+      "liquido": "__ELUCENIA_INVALID_OPTION__",
+      "gas": "0",
+      "protetor": "0",
+      "estilo": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "liquido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field gas",
+    "input": {
+      "solido": "0",
+      "liquido": "0",
+      "protetor": "0",
+      "estilo": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "gas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field gas",
+    "input": {
+      "solido": "0",
+      "liquido": "0",
+      "gas": "",
+      "protetor": "0",
+      "estilo": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "gas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option gas",
+    "input": {
+      "solido": "0",
+      "liquido": "0",
+      "gas": "__ELUCENIA_INVALID_OPTION__",
+      "protetor": "0",
+      "estilo": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "gas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field protetor",
+    "input": {
+      "solido": "0",
+      "liquido": "0",
+      "gas": "0",
+      "estilo": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "protetor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field protetor",
+    "input": {
+      "solido": "0",
+      "liquido": "0",
+      "gas": "0",
+      "protetor": "",
+      "estilo": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "protetor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option protetor",
+    "input": {
+      "solido": "0",
+      "liquido": "0",
+      "gas": "0",
+      "protetor": "__ELUCENIA_INVALID_OPTION__",
+      "estilo": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "protetor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field estilo",
+    "input": {
+      "solido": "0",
+      "liquido": "0",
+      "gas": "0",
+      "protetor": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "estilo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field estilo",
+    "input": {
+      "solido": "0",
+      "liquido": "0",
+      "gas": "0",
+      "protetor": "0",
+      "estilo": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "estilo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option estilo",
+    "input": {
+      "solido": "0",
+      "liquido": "0",
+      "gas": "0",
+      "protetor": "0",
+      "estilo": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "estilo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

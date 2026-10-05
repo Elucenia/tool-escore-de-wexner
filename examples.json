@@ -1,6 +1,16 @@
 [
   {
-    "label": "Nenhuma perda: 0 (continência perfeita)",
+    "id": "escore-de-wexner",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Nenhuma perda: 0 (continência perfeita)",
+    "originalInput": {
+      "solido": "0",
+      "liquido": "0",
+      "gas": "0",
+      "protetor": "0",
+      "estilo": "0"
+    },
     "input": {
       "solido": "0",
       "liquido": "0",
@@ -12,17 +22,37 @@
       "score": 0,
       "level": "low"
     },
-    "originalInput": {
-      "solido": "0",
-      "liquido": "0",
-      "gas": "0",
-      "protetor": "0",
-      "estilo": "0"
+    "recordedResult": {
+      "main": [
+        "0",
+        "de 20"
+      ],
+      "label": "Escore de Wexner",
+      "raw": {
+        "score": 0
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+    "id": "escore-de-wexner",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+    "originalInput": {
+      "solido": "0",
+      "liquido": "2",
+      "gas": "3",
+      "protetor": "4",
+      "estilo": "2"
+    },
     "input": {
       "solido": "0",
       "liquido": "2",
@@ -34,17 +64,37 @@
       "score": 11,
       "level": "mid"
     },
-    "originalInput": {
-      "solido": "0",
-      "liquido": "2",
-      "gas": "3",
-      "protetor": "4",
-      "estilo": "2"
+    "recordedResult": {
+      "main": [
+        "11",
+        "de 20"
+      ],
+      "label": "Escore de Wexner",
+      "raw": {
+        "score": 11
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Todos os itens \"sempre\": 20 (incontinência completa)",
+    "id": "escore-de-wexner",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Todos os itens \"sempre\": 20 (incontinência completa)",
+    "originalInput": {
+      "solido": "4",
+      "liquido": "4",
+      "gas": "4",
+      "protetor": "4",
+      "estilo": "4"
+    },
     "input": {
       "solido": "4",
       "liquido": "4",
@@ -56,13 +106,23 @@
       "score": 20,
       "level": "mid"
     },
-    "originalInput": {
-      "solido": "4",
-      "liquido": "4",
-      "gas": "4",
-      "protetor": "4",
-      "estilo": "4"
+    "recordedResult": {
+      "main": [
+        "20",
+        "de 20"
+      ],
+      "label": "Escore de Wexner",
+      "raw": {
+        "score": 20
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
