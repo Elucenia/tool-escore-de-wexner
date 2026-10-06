@@ -103,3 +103,26 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Perfekte Kontinenz (0)
+
+
+### 2
+
+Inkontinenz vorhanden: Je höher der Score, desto schwerer die Ausprägung (Maximum 20)
+
+Verwenden Sie denselben Score, um vor und nach der Behandlung zu vergleichen.
+
+
+### 3
+
+Inkontinenz vorhanden: Je höher der Score, desto schwerer die Ausprägung (Maximum 20)
+
+Verwenden Sie denselben Score, um vor und nach der Behandlung zu vergleichen.
+

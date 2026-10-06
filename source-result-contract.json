@@ -1,0 +1,173 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escore-de-wexner",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "439b96c0d8ef89ade2c2be92fbbc9be36b11e068",
+    "oldEngineSha256": "f3749af8120c6dd7387570880070e0623ae1db3bca16abbd3117985803f2149c",
+    "currentEngineSha256": "6a1b56fd53c35dacffe1ef81daf028ad77f07fa95fffab730122ff4b43575390"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Nenhuma perda: 0 (continência perfeita)",
+      "input": {
+        "solido": "0",
+        "liquido": "0",
+        "gas": "0",
+        "protetor": "0",
+        "estilo": "0"
+      },
+      "publicOutput": {
+        "id": "escore-de-wexner",
+        "main": [
+          "0",
+          "de 20"
+        ],
+        "label": "Escore de Wexner",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "de 20"
+        ],
+        "label": "Escore de Wexner",
+        "level": "low",
+        "verdict": "Continência perfeita (0)",
+        "note": "",
+        "raw": {
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+      "input": {
+        "solido": "0",
+        "liquido": "2",
+        "gas": "3",
+        "protetor": "4",
+        "estilo": "2"
+      },
+      "publicOutput": {
+        "id": "escore-de-wexner",
+        "main": [
+          "11",
+          "de 20"
+        ],
+        "label": "Escore de Wexner",
+        "raw": {
+          "score": 11
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 11,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "11",
+          "de 20"
+        ],
+        "label": "Escore de Wexner",
+        "level": "mid",
+        "verdict": "Incontinência presente: quanto maior o escore, maior a gravidade (máximo 20)",
+        "note": "Use o mesmo escore para comparar antes e depois do tratamento.",
+        "raw": {
+          "score": 11
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Todos os itens \"sempre\": 20 (incontinência completa)",
+      "input": {
+        "solido": "4",
+        "liquido": "4",
+        "gas": "4",
+        "protetor": "4",
+        "estilo": "4"
+      },
+      "publicOutput": {
+        "id": "escore-de-wexner",
+        "main": [
+          "20",
+          "de 20"
+        ],
+        "label": "Escore de Wexner",
+        "raw": {
+          "score": 20
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 20,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "20",
+          "de 20"
+        ],
+        "label": "Escore de Wexner",
+        "level": "mid",
+        "verdict": "Incontinência presente: quanto maior o escore, maior a gravidade (máximo 20)",
+        "note": "Use o mesmo escore para comparar antes e depois do tratamento.",
+        "raw": {
+          "score": 20
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

@@ -266,7 +266,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Cleveland Clinic/Wexner Jorge 1993:5 itens 0–4, total 0–20; incontinência fecal",
-    "implementationVersion": "escore-de-wexner@native-2026-10-03+f3749af8120c",
+    "implementationVersion": "escore-de-wexner@native-2026-10-05+6a1b56fd53c3",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/8416784/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -495,7 +495,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "f3749af8120c6dd7387570880070e0623ae1db3bca16abbd3117985803f2149c"
+      "implementationHash": "6a1b56fd53c35dacffe1ef81daf028ad77f07fa95fffab730122ff4b43575390",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escore-de-wexner@native-2026-10-03+f3749af8120c",
+          "previousImplementationHash": "f3749af8120c6dd7387570880070e0623ae1db3bca16abbd3117985803f2149c",
+          "implementationHash": "6a1b56fd53c35dacffe1ef81daf028ad77f07fa95fffab730122ff4b43575390",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "a34364a1f5546214acf6fe0834ea2bef7179d901ed07c808eed6f609f9802f89",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A gravidade relatada de incontinência fecal não define sua causa ou tratamento. A revisão original destaca história, exame e avaliação fisiológica pré-tratamento. A escala e suas frequências devem ser aplicadas conforme a versão; o total não substitui avaliação da função anorretal.",
     "sourceLimitEvidence": {
@@ -514,20 +542,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escore-de-wexner/calculator.js",
-    "bytes": 5799,
-    "sha256": "f3749af8120c6dd7387570880070e0623ae1db3bca16abbd3117985803f2149c"
+    "bytes": 6004,
+    "sha256": "6a1b56fd53c35dacffe1ef81daf028ad77f07fa95fffab730122ff4b43575390"
   },
-  "sourceToolSha256": "bbf0803212ae2c21616d373d7b1c8bf639a3148c500285671ca67cfe0a486ec9",
+  "sourceToolSha256": "48466788d5aaeeef4136b777ad80f40227871e20890c7fcca6f5562debb53556",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "bb7351512b8336a4e241efc2ded3cc8967fcbf66eea95c1422631ed375ef9edd",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "bb7351512b8336a4e241efc2ded3cc8967fcbf66eea95c1422631ed375ef9edd",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

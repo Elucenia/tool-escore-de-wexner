@@ -1,0 +1,487 @@
+{
+  "id": "escore-de-wexner",
+  "implementationVersion": "escore-de-wexner@native-2026-10-05+6a1b56fd53c3",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Nenhuma perda: 0 (continência perfeita)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Continência perfeita (0)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incontinência presente: quanto maior o escore, maior a gravidade (máximo 20)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Use o mesmo escore para comparar antes e depois do tratamento.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os itens \"sempre\": 20 (incontinência completa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incontinência presente: quanto maior o escore, maior a gravidade (máximo 20)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Use o mesmo escore para comparar antes e depois do tratamento.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Nenhuma perda: 0 (continência perfeita)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Perfect continence (0)",
+            "locale": "en",
+            "template": "documented-authored-d86eaa237a019773ff68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incontinence present: the higher the score, the greater the severity (maximum 20)",
+            "locale": "en",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "Use the same score to compare before and after treatment.",
+            "locale": "en",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os itens \"sempre\": 20 (incontinência completa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incontinence present: the higher the score, the greater the severity (maximum 20)",
+            "locale": "en",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "Use the same score to compare before and after treatment.",
+            "locale": "en",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Nenhuma perda: 0 (continência perfeita)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Continencia perfecta (0)",
+            "locale": "es",
+            "template": "documented-authored-d86eaa237a019773ff68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incontinencia presente: cuanto mayor es la puntuación, mayor es la gravedad (máximo 20)",
+            "locale": "es",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "Utilice la misma puntuación para comparar antes y después del tratamiento.",
+            "locale": "es",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os itens \"sempre\": 20 (incontinência completa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incontinencia presente: cuanto mayor es la puntuación, mayor es la gravedad (máximo 20)",
+            "locale": "es",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "Utilice la misma puntuación para comparar antes y después del tratamiento.",
+            "locale": "es",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Nenhuma perda: 0 (continência perfeita)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Continence parfaite (0)",
+            "locale": "fr",
+            "template": "documented-authored-d86eaa237a019773ff68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incontinence présente : plus le score est élevé, plus la gravité est importante (maximum 20)",
+            "locale": "fr",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "Utilisez le même score pour comparer avant et après le traitement.",
+            "locale": "fr",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os itens \"sempre\": 20 (incontinência completa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incontinence présente : plus le score est élevé, plus la gravité est importante (maximum 20)",
+            "locale": "fr",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "Utilisez le même score pour comparer avant et après le traitement.",
+            "locale": "fr",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Nenhuma perda: 0 (continência perfeita)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Perfekte Kontinenz (0)",
+            "locale": "de",
+            "template": "documented-authored-d86eaa237a019773ff68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Inkontinenz vorhanden: Je höher der Score, desto schwerer die Ausprägung (Maximum 20)",
+            "locale": "de",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "Verwenden Sie denselben Score, um vor und nach der Behandlung zu vergleichen.",
+            "locale": "de",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os itens \"sempre\": 20 (incontinência completa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Inkontinenz vorhanden: Je höher der Score, desto schwerer die Ausprägung (Maximum 20)",
+            "locale": "de",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "Verwenden Sie denselben Score, um vor und nach der Behandlung zu vergleichen.",
+            "locale": "de",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Nenhuma perda: 0 (continência perfeita)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Continenza perfetta (0)",
+            "locale": "it",
+            "template": "documented-authored-d86eaa237a019773ff68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incontinenza presente: più alto è il punteggio, maggiore è la gravità (massimo 20)",
+            "locale": "it",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "Usare lo stesso punteggio per confrontare prima e dopo il trattamento.",
+            "locale": "it",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os itens \"sempre\": 20 (incontinência completa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incontinenza presente: più alto è il punteggio, maggiore è la gravità (massimo 20)",
+            "locale": "it",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "Usare lo stesso punteggio per confrontare prima e dopo il trattamento.",
+            "locale": "it",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Nenhuma perda: 0 (continência perfeita)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "سلس تام (0)",
+            "locale": "ar",
+            "template": "documented-authored-d86eaa237a019773ff68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "وجود سلس: كلما ارتفعت الدرجة زادت الشدة (الحد الأقصى 20)",
+            "locale": "ar",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "استخدم الدرجة نفسها للمقارنة قبل العلاج وبعده.",
+            "locale": "ar",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os itens \"sempre\": 20 (incontinência completa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "وجود سلس: كلما ارتفعت الدرجة زادت الشدة (الحد الأقصى 20)",
+            "locale": "ar",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "استخدم الدرجة نفسها للمقارنة قبل العلاج وبعده.",
+            "locale": "ar",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Nenhuma perda: 0 (continência perfeita)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "完全控便（0）",
+            "locale": "zh",
+            "template": "documented-authored-d86eaa237a019773ff68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "存在失禁：分数越高，严重程度越高（最高20）",
+            "locale": "zh",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "使用同一评分比较治疗前后。",
+            "locale": "zh",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os itens \"sempre\": 20 (incontinência completa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "存在失禁：分数越高，严重程度越高（最高20）",
+            "locale": "zh",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "使用同一评分比较治疗前后。",
+            "locale": "zh",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Nenhuma perda: 0 (continência perfeita)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "完全な便失禁なし（0）",
+            "locale": "ja",
+            "template": "documented-authored-d86eaa237a019773ff68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "失禁あり：スコアが高いほど重症度が高い（最大20）",
+            "locale": "ja",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "治療前後を比較するために同じスコアを使用してください。",
+            "locale": "ja",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os itens \"sempre\": 20 (incontinência completa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "失禁あり：スコアが高いほど重症度が高い（最大20）",
+            "locale": "ja",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "治療前後を比較するために同じスコアを使用してください。",
+            "locale": "ja",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Nenhuma perda: 0 (continência perfeita)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "पूर्ण नियंत्रण (0)",
+            "locale": "hi",
+            "template": "documented-authored-d86eaa237a019773ff68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Gases geralmente, líquidas às vezes, protetor sempre, estilo às vezes: 11",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "असंयम मौजूद: स्कोर जितना अधिक, गंभीरता उतनी अधिक (अधिकतम 20)",
+            "locale": "hi",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "उपचार से पहले और बाद की तुलना करने के लिए वही स्कोर उपयोग करें।",
+            "locale": "hi",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os itens \"sempre\": 20 (incontinência completa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "असंयम मौजूद: स्कोर जितना अधिक, गंभीरता उतनी अधिक (अधिकतम 20)",
+            "locale": "hi",
+            "template": "documented-authored-6e2daa7550e57c171584"
+          },
+          "note": {
+            "text": "उपचार से पहले और बाद की तुलना करने के लिए वही स्कोर उपयोग करें।",
+            "locale": "hi",
+            "template": "documented-authored-13564dacaa196b3338aa"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}
